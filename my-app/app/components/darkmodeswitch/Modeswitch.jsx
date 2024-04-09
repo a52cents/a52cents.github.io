@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 
+import './modeswitch.css';
 const Modeswitch = () => {
 
     const [isDarkMode, setDarkMode] = useState(false);
@@ -16,11 +17,13 @@ const Modeswitch = () => {
 
   return (
     <div>
-        <input
-        type="checkbox"
-        checked={isDarkMode}
-        onChange={switchTheme}
-        />
+
+<label className="switch">
+  <input type="checkbox"
+  checked={isDarkMode}
+  onChange={switchTheme}/>
+  <span className="slider"></span>
+</label>
     </div>
   )
 }
