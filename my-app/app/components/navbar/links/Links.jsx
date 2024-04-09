@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import "./links.css";
+import styles from "./links.module.css";
 const Links = () => {
 
     const linksArray =[
@@ -23,7 +23,7 @@ const Links = () => {
     ]
 
   return (
-    <div className='links-list'>
+    <div className={styles.links}>
         {linksArray.map((link)=>{
            return <Link href={link.path} key={link.title}>{link.title}</Link>
         })}

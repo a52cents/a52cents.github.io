@@ -17,5 +17,16 @@
 body{
     background-color: var(--bg-color);
     -webkit-text-fill-color:var(--font-color);
-    
+
+}
+
+.container{
+    width:86%;
+    margin: auto;
+    padding-left:16px;
+    padding-right: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
