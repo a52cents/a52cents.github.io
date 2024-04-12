@@ -1,17 +1,21 @@
 :root {
+    
+
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #0c0b21;
+    --heading-color: #818cab;
+    --button-2:linear-gradient(90deg, hsla(240, 100%, 94%, 1) 0%, hsla(240, 100%, 85%, 1) 100%);
+    --button:linear-gradient(90deg, rgba(22,22,37,1) 0%, rgba(22,22,37,1) 7%, rgba(225,225,255,1) 100%);
+}
+
+[data-theme="dark"] {
     --primary-color: #302AE6;
     --secondary-color: #536390;
     --font-color: #424242;
     --bg-color: #fff;
     --heading-color: #292922;
-}
-
-[data-theme="dark"] {
-    --primary-color: #9A97F3;
-    --secondary-color: #818cab;
-    --font-color: #e1e1ff;
-    --bg-color: #161625;
-    --heading-color: #818cab;
 }
 
 body{

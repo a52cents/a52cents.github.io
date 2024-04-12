@@ -1,0 +1,102 @@
+.container{
+    display: flex;
+    gap: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.backImage{
+    position: absolute;
+    left:22%;
+    z-index: -2;
+    filter: blur(25rem) sepia(100%) brightness(0.56);
+  }
+
+.textContainer{
+    flex: 1;
+    gap:26px;
+    text-align: center;
+
+}
+.title{
+    font-size: 56px;
+
+}
+.desc{
+    font-size: 16px;
+}
+.brands{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brandImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.3rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+.heroImg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover{
+    -webkit-text-fill-color: var(--bg-color);
+    transition: all 0.475s;
+
+}
+.button:hover::before {
+    transform: scaleX(1);
+   
+  }
+  
+  .buttonContent {
+    position: relative;
+
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: var(--button-2);
+
+    transition: all 0.475s;
+  }
+
+
+/* .button{
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+
+    -webkit-text-fill-color: var(--font-color);
+    background-image: var(--button-2) ;
+    box-shadow: 7px;
+    
+} */
