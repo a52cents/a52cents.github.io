@@ -10,7 +10,7 @@
     position: absolute;
     left:22%;
     z-index: -2;
-    filter: blur(25rem) sepia(100%) brightness(0.56);
+    filter: blur(6rem) brightness(1.56);
   }
 
 .textContainer{
