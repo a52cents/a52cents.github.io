@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    gap: 100px;
+}
+
+
+.imgContainer{
+    flex: 1;
+    position: relative;
+}
+
+.img{
+    object-fit: contain;
+}
+
+.textContainer{
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.secondContainer{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 46px;
+}
+
+.titleContainer{
+
+}
+
+.detail{
+    display: flex;
+    gap: 20px;
+}
+
+.detailText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.avatar{
+    object-fit: cover;
+    border-radius: 50%;
+}
