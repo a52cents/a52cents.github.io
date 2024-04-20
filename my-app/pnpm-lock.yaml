@@ -8,6 +8,9 @@ dependencies:
   next:
     specifier: 14.1.4
     version: 14.1.4(@babel/core@7.24.4)(react-dom@18.2.0)(react@18.2.0)
+  p5-react:
+    specifier: ^1.0.3
+    version: 1.0.3(react@18.2.0)
   react:
     specifier: ^18
     version: 18.2.0
@@ -2711,6 +2714,19 @@ packages:
     dependencies:
       p-limit: 3.1.0
     dev: true
+
+  /p5-react@1.0.3(react@18.2.0):
+    resolution: {integrity: sha512-1Xw5Y644lNUOKGq0cx0mfbdy8t0Wb3i+RO59jhFG9uCc5mmUvs8M8zE1LRWWO4PkDmBAIgguc9STjPH97PLrEA==}
+    peerDependencies:
+      react: '>= 18.2.0'
+    dependencies:
+      p5: 1.9.2
+      react: 18.2.0
+    dev: false
+
+  /p5@1.9.2:
+    resolution: {integrity: sha512-fV8Td9Q1qlYXRXPLNrclRsgzXxPp/EuDlJUteV1XEtsy0JwjjCVteCrv7TTCU71BSoEtmuQ/51BIVRUJi/0gEw==}
+    dev: false
 
   /parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}

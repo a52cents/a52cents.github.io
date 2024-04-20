@@ -1,6 +1,10 @@
 import React from 'react'
 import styles from './home.module.css'
 import Image from 'next/image'
+import Canvas from './components/canvas/Canvas'
+import dynamic from 'next/dynamic'
+
+const DynamicComponentNoSSR = dynamic(() => import('../app/components/canvas/Canvas'), {ssr: false})
 const Home = () => {
   return (
     <div>
@@ -26,8 +30,7 @@ const Home = () => {
       <Image src="/hero.gif" alt="alt" width={500} height={500} />
     </div>
     </div>
-    
-    
+    <DynamicComponentNoSSR/>
     
     </div>
   )
