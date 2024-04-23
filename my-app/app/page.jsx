@@ -30,7 +30,7 @@ const Home = () => {
       <Image src="/hero.gif" alt="alt" width={500} height={500} />
     </div>
     </div>
-    <DynamicComponentNoSSR/>
+    {/* <DynamicComponentNoSSR/> */}
     
     </div>
   )

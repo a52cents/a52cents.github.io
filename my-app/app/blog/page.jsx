@@ -1,20 +1,25 @@
 import React from 'react'
 import styles from './blog.module.css'
 import PostCard from './../components/postCard/postCard';
+import { getPosts } from '../lib/data';
 
-const getData = async ()=>{
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+// const getData = async ()=>{
+//   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
 
-  if(!res.ok) {
-    throw new Error("Quelque chose a échoué lors de la récupération des données");
-  }
-  return res.json();
+//   if(!res.ok) {
+//     throw new Error("Quelque chose a échoué lors de la récupération des données");
+//   }
+//   return res.json();
   
-}
+// }
+
+
+
 
 const BlogPage = async () => {
 
-  const posts = await getData();
+  const posts = await getPosts();
+  // const posts = await getData();
   
   return (
     <div className={styles.container}>
