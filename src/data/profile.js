@@ -6,7 +6,7 @@ export const profile = {
   subtitle: 'Conception, développement et déploiement de A à Z.',
   summary:
     "Passionné par la création d'applications complètes et autonomes. Expérience terrain en production, rigueur et respect des consignes. Prêt à concevoir, développer et maintenir des sites ou applications robustes.",
-  location: 'Argent-sur-Sauldre',
+  location: 'France',
   languagesLabel: 'FR (Natif), EN (B2)',
   mobility: 'Permis B - Véhiculé',
   status: 'Disponible',
