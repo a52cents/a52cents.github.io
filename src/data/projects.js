@@ -9,6 +9,7 @@ export const projects = [
     links: [{ label: 'Voir le site', href: 'https://kadr.space' }],
     featured: true,
     visual: 'kadr',
+    image: 'projects/kadr-landing.png',
   },
   {
     name: 'SkyQuest',
@@ -19,14 +20,16 @@ export const projects = [
     stack: ['Next.js', 'React', 'TypeScript', 'astronomy-engine', 'Tailwind'],
     links: [{ label: 'Voir le site', href: 'https://sky-quest-psi.vercel.app' }],
     visual: 'skyquest',
+    image: 'projects/skyquest-landing.png',
   },
-  {
-    name: 'BissapMaker',
-    tag: 'Firebase',
-    meta: 'Projet personnel',
-    description: 'Interface CRUD avec gestion de données Firebase.',
-    stack: ['Firebase', 'CRUD', 'Interface web'],
-    links: [{ label: 'Voir le site', href: 'a52cents.github.io/BissapMaker' }],
-    visual: 'bissapmaker',
-  },
+ {
+  name: 'Okaiana Shop CBD',
+  tag: 'WordPress E-commerce',
+  meta: 'Site e-commerce',
+  description: 'Site WordPress de vente en ligne pour une boutique CBD.',
+  stack: ['WordPress', 'E-commerce', 'Vente en ligne'],
+  links: [{ label: 'Voir le site', href: 'https://okaianashopcbd.fr' }],
+  visual: 'okaiana',
+  image: 'projects/okaiana-landing.png',
+},
 ];

@@ -1,7 +1,20 @@
-function ProjectVisual({ type }) {
+function ProjectVisual({ project }) {
+  const imageSrc = project.image
+    ? `${import.meta.env.BASE_URL}${project.image}`
+    : null;
+
   return (
     <div className="noise-img project-visual" aria-hidden="true">
-      {type === 'kadr' ? (
+      {imageSrc ? (
+        <img
+          className="project-visual__image"
+          src={imageSrc}
+          alt=""
+          loading="lazy"
+        />
+      ) : null}
+
+      {!imageSrc && project.visual === 'kadr' ? (
         <div className="mock-window mock-kadr">
           <div className="mock-kadr__sidebar">
             <span />
@@ -15,7 +28,7 @@ function ProjectVisual({ type }) {
         </div>
       ) : null}
 
-      {type === 'skyquest' ? (
+      {!imageSrc && project.visual === 'skyquest' ? (
         <div className="mock-window mock-skyquest">
           <div className="star-grid">
             <span />
@@ -28,7 +41,7 @@ function ProjectVisual({ type }) {
         </div>
       ) : null}
 
-      {type === 'bissapmaker' ? (
+      {!imageSrc && project.visual === 'bissapmaker' ? (
         <div className="mock-window mock-form">
           <span className="short" />
           <span />
@@ -43,7 +56,7 @@ function ProjectVisual({ type }) {
 export default function ProjectCard({ project, featured = false }) {
   return (
     <article className={`card project-card ${featured ? 'project-card--featured' : ''}`}>
-      <ProjectVisual type={project.visual} />
+      <ProjectVisual project={project} />
 
       <div className="project-card__body">
         <div className="project-card__meta">
