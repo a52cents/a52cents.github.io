@@ -59,25 +59,45 @@ function Hero({ profile }) {
 }
 
 function ProjectsSection({ projects }) {
-  const featured = projects.find((project) => project.featured);
-  const secondary = projects.filter((project) => !project.featured);
+  const mainProjects = projects.filter((project) => project.group === 'main');
+  const labs = projects.filter((project) => project.group === 'lab');
 
   return (
-    <section className="section" id="projects">
+    <section className="section projects-section" id="projects" aria-labelledby="projects-title">
       <div className="section__heading">
         <div>
-          <h2>Projets Phares</h2>
-          <p>Sélection de réalisations techniques.</p>
+          <h2 id="projects-title">Projets</h2>
+          <p>Sélection de réalisations et d’expériences interactives.</p>
         </div>
       </div>
 
-      {featured ? <ProjectCard project={featured} featured /> : null}
+      <section className="project-group" aria-labelledby="main-projects-title">
+        <div className="project-group__heading">
+          <h3 id="main-projects-title">Projets principaux</h3>
+          <span className="mono">{String(mainProjects.length).padStart(2, '0')}</span>
+        </div>
 
-      <div className="project-grid">
-        {secondary.map((project) => (
-          <ProjectCard project={project} key={project.name} />
-        ))}
-      </div>
+        <div className="project-grid">
+          {mainProjects.map((project) => (
+            <ProjectCard project={project} key={project.name} />
+          ))}
+        </div>
+      </section>
+
+      {labs.length > 0 ? (
+        <section className="project-group" aria-labelledby="labs-title">
+          <div className="project-group__heading">
+            <h3 id="labs-title">Expériences / Labs</h3>
+            <span className="mono">{String(labs.length).padStart(2, '0')}</span>
+          </div>
+
+          <div className="project-grid">
+            {labs.map((project) => (
+              <ProjectCard project={project} key={project.name} />
+            ))}
+          </div>
+        </section>
+      ) : null}
     </section>
   );
 }
