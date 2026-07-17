@@ -7,6 +7,14 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+
+      workbox: {
+        navigateFallbackDenylist: [
+          /^\/Systeme-Solaire(?:\/|$)/i,
+          /^\/SimGame(?:\/|$)/i,
+        ],
+      },
+
       manifest: {
         name: 'Portfolio de Kalim',
         short_name: 'Kalim',
