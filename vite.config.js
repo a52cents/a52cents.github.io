@@ -9,11 +9,12 @@ export default defineConfig({
       registerType: 'autoUpdate',
 
       workbox: {
-        navigateFallbackDenylist: [
-          /^\/Systeme-Solaire(?:\/|$)/i,
-          /^\/SimGame(?:\/|$)/i,
-        ],
-      },
+  navigateFallbackDenylist: [
+    /^\/Systeme-Solaire(?:\/|$)/i,
+    /^\/SimGame(?:\/|$)/i,
+    /^\/was-it-there(?:\/|$)/i,
+  ],
+},
 
       manifest: {
         name: 'Portfolio de Kalim',
