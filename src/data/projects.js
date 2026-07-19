@@ -39,8 +39,9 @@ export const projects = [
       {
         type: 'source',
         label: 'Code source',
-        href: 'https://a52cents.github.io/was-it-there',
+        href: 'https://github.com/a52cents/was-it-there',
       },
+      { type: 'site', label: 'Voir le site', href: 'https://a52cents.github.io/was-it-there' },
     ],
     image: 'projects/wasitthere.png',
     imageAlt: 'Pièce intérieure du jeu d’observation 3D Was It There?',
