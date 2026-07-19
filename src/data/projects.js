@@ -29,7 +29,7 @@ export const projects = [
     description:
       'Jeu d’observation 3D dans lequel le joueur mémorise des pièces, traverse une extinction puis identifie les objets qui ont changé pour progresser dans une maison qui reconstruit mal ses souvenirs.',
     highlights: [
-      'parcours de quatre salles 3D connectées',
+      'parcours de salles 3D connectées',
       'anomalies déterministes à observer et signaler',
       'modes narratif et contre-la-montre',
       'collisions FPS et éditeur de niveaux intégré',
@@ -39,7 +39,7 @@ export const projects = [
       {
         type: 'source',
         label: 'Code source',
-        href: 'https://github.com/a52cents/was-it-there',
+        href: 'https://a52cents.github.io/was-it-there',
       },
     ],
     image: 'projects/wasitthere.png',
